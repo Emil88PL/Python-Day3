@@ -40,7 +40,7 @@ class BinFile(MyFile):
         return
         
 if __name__ == '__main__':
-    file1 = TextFile('file1.txt')
+    file1 = TextFile('ex11/file1.txt')
     print(file1, len(file1))
 
     file1.contents = 'hello'
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     print(file1.contents)
     print("Size of file1:", len(file1))
  
-    file2 = BinFile('file2.dat')
+    file2 = BinFile('ex11/file2.dat')
     print(file2, len(file2))
 
     file2.contents = 42
