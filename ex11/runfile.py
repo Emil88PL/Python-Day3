@@ -1,6 +1,8 @@
-from myfile import Myfile
+#!/usr/local/bin/python
 
-filea = Myfile("country.txt")
+from myfile import MyFile
+
+filea = MyFile("country.txt")
 print(filea)
 
-print(filea.get_filename(), "is", len(filea), "bytes")
+print(filea.get_fname(), "is", len(filea), "bytes")
