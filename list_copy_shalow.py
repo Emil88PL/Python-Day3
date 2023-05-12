@@ -20,3 +20,4 @@ import copy
 fruit = ["Knife", "Spoon", ["Apple", "Peach", "Orange"]]
 lunch[2][1] = "Eggggsss"
 print("Fruit3:", fruit, "\nLunch3:",lunch)
+
