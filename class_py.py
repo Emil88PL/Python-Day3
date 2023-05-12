@@ -3,6 +3,7 @@ class Car:
         self._wheel = wheels
         self._make = make
         self._model = model
+        self._owned = True
     
     def get_model(self):    # granded access to the model
         return self._model
