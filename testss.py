@@ -302,13 +302,41 @@
 # PyPi
 # cowsay
 
-import cowsay
+# import cowsay
+# import sys
+
+# if len(sys.argv) == 3:
+#     cowsay.cow("Hello, " + sys.argv[1] + "! " + sys.argv[2] + "! ")
+#     cowsay.dragon("Hello, " + sys.argv[1] + "! " + sys.argv[2] + "! ")
+#     cowsay.trex("Hello, " + sys.argv[1] + "! " + sys.argv[2] + "! ")
+
+
+# APIs !!!!
+#####################################################################################################################################################
+
+
+# requests install by pip
+# itunes API APPPLE
+
+## https://itunes.apple.com/search?entity=song&limit=1&term=weezer
+## JSON
+import json
+import requests
 import sys
 
-if len(sys.argv) == 3:
-    cowsay.cow("Hello, " + sys.argv[1] + "! " + sys.argv[2] + "! ")
-    cowsay.dragon("Hello, " + sys.argv[1] + "! " + sys.argv[2] + "! ")
-    cowsay.trex("Hello, " + sys.argv[1] + "! " + sys.argv[2] + "! ")
+if len(sys.argv) != 2:
+    sys.exit()
+
+                                                                    #limit of the songs 50
+response = requests.get("https://itunes.apple.com/search?entity=song&limit=50&term=" + sys.argv[1])
+#print(json.dumps(response.json(), indent=2)) # translate json to readable format
+
+o = response.json()  ## storing all json response in to a variable
+for result in o["results"]:
+    print(result["trackName"])
+
+
+
 
 
 
