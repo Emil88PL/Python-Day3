@@ -287,16 +287,32 @@
 
 ## 4
 
+# import sys
+
+# #check for errors
+
+# if len(sys.argv) < 2:
+#     sys.exit("Too few arguments")
+
+# # slice
+# for arg in sys.argv[1:]:
+#     print("hello, my name is", arg)
+
+# packages
+# PyPi
+# cowsay
+
+import cowsay
 import sys
 
-#check for errors
+if len(sys.argv) == 3:
+    cowsay.cow("Hello, " + sys.argv[1] + "! " + sys.argv[2] + "! ")
+    cowsay.dragon("Hello, " + sys.argv[1] + "! " + sys.argv[2] + "! ")
+    cowsay.trex("Hello, " + sys.argv[1] + "! " + sys.argv[2] + "! ")
 
-if len(sys.argv) < 2:
-    sys.exit("Too few arguments")
 
-# slice
-for arg in sys.argv[1:]:
-    print("hello, my name is", arg)
+
+
 
 
 
