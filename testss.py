@@ -136,16 +136,121 @@
         
 # main()
 
+# ## 1
+# def main():
+#     x = get_int()
+#     print(f"x is {x}")
 
+# def get_int():
+#     while True:
+#         try:
+#             x = int(input("Put a number "))
+#             #break no else then
+#         except ValueError:
+#             print("Put a correct number")
+#         else:
+#             break
+#             #print(f"x is {x}")
+#     return x
 
-
-
-
-
+# main
     
-        
-    
-        
+#  ## 2
+
+# def main():
+#     x = get_int()
+#     print(f"x is {x}")
+
+# def get_int():
+#     while True:
+#         try:
+#             return int(input("Put a number ")) # return is equal to break
+#         except ValueError:
+#             print("Put a correct number")
+       
+
+# main()       
+
+## 3
+
+# def main():
+#     x = get_int()
+#     print(f"x is {x}")
+
+# def get_int():
+#     while True:
+#         try:
+#             return int(input("Put a number "))
+#         except ValueError:
+#             pass # just pass if you dont want to show the error to the user 
+#             print("Put a correct number")
+       
+# main()
+
+ ## 4
+
+# def main():
+#     x = get_int("What is x? ")
+#     print(f"x is {x}")
+
+# def get_int(prompt):
+#     while True:
+#         try:
+#             return int(input(prompt))
+#         except ValueError:
+#             pass # just pass if you dont want to show the error to the user 
+#             print("Put a correct number")
+       
+## raise.....
+# main()
+
+#libraries
+# module one or more feature
+# random
+# import random
+#print(dir(__builtins__))
+
+
+## 1
+# import random
+
+# coin = random.choice(["Heads", "Tails"])
+# print(coin)
+
+## 2
+# from random import choice
+
+# coin = choice(["Heads", "Tails"])
+# print(coin)
+
+## 3
+
+from random import choice as chi
+
+coin = chi(["Heads", "Tails"])
+print(coin)
+
+from random import randint
+
+number_random = randint(0, 10000)
+print(number_random)
+
+from random import shuffle
+
+cards = ["Jack", "Queen", "King", "Player"]
+
+shuffle(cards)
+
+for card in cards:
+    print(card)
+
+
+
+
+
+
+
+
 
 
 
