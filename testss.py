@@ -225,25 +225,65 @@
 
 ## 3
 
-from random import choice as chi
+# from random import choice as chi
 
-coin = chi(["Heads", "Tails"])
-print(coin)
+# coin = chi(["Heads", "Tails"])
+# print(coin)
 
-from random import randint
+# from random import randint
 
-number_random = randint(0, 10000)
-print(number_random)
+# number_random = randint(0, 10000)
+# print(number_random)
 
-from random import shuffle
+# from random import shuffle
 
-cards = ["Jack", "Queen", "King", "Player"]
+# cards = ["Jack", "Queen", "King", "Player"]
 
-shuffle(cards)
+# shuffle(cards)
 
-for card in cards:
-    print(card)
+# for card in cards:
+#     print(card)
 
+## 4
+# import statistics
+# # avrage calculatcion
+# print(statistics.mean([100,20]))
+
+## command line arguments
+## sys.argv
+
+# argument vector
+
+## 1
+# import sys
+# try:
+#     print("hello, my name is", sys.argv[1])
+# except IndexError:
+#     print("Too few arguments")
+
+## 2
+
+# import sys
+# if len(sys.argv) < 2:
+#     print("Too few arguments")
+# elif len(sys.argv) > 2:
+#     print("Too many arguments")
+# else:
+#     print("hello, my name is", sys.argv[1])
+
+## 3
+
+import sys
+
+#check for errors
+
+if len(sys.argv) < 2:
+    sys.exit("Too few arguments")
+elif len(sys.argv) > 2:
+    sys.exit("Too many arguments")  # exit after prompt
+
+# print name tags
+print("hello, my name is", sys.argv[1])
 
 
 
