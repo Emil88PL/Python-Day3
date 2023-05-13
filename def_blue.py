@@ -1,5 +1,5 @@
 def main():
-    name = input("What's your name? ")
+    name = input("What's your name? ").strip().title()
     hello(name)
     
 
@@ -16,12 +16,13 @@ def calc():
     except:
         error()
 
+
 def square(x):
     return x * x
 
 def error():
-    print("Only Numbers please!")
-    calc()
+        print("Only Numbers please!")
+        calc()
 
 main()
 calc()
