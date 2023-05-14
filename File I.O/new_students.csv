@@ -1,5 +1,5 @@
-house, name
-"Gryffindor, London",Hermione
-Gryffindor,Ron
-Gryffindor,Harry
-Slytherin,Draco
+house,                 name,        home,
+"Gryffindor, London",  Hermione,    London,
+Gryffindor,            Ron,         London,
+Gryffindor,            Harry ,      SW London,
+Slytherin,             Draco,       Coventry,
