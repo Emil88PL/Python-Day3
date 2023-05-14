@@ -16,8 +16,6 @@ for student in sorted(students, key=lambda student: student["name"]):
 
 ## belove example dosent work - https://cs50.harvard.edu/python/2022/notes/6/ copy from harvard webstie still not working as intended
 ## reading only half line
-
-
 # import csv
 
 # students = []
