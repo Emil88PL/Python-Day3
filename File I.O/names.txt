@@ -1,2 +1,4 @@
 Hermione
 Ron
+Harry
+Draco
