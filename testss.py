@@ -320,20 +320,20 @@
 
 ## https://itunes.apple.com/search?entity=song&limit=1&term=weezer
 ## JSON
-import json
-import requests
-import sys
+# import json
+# import requests
+# import sys
 
-if len(sys.argv) != 2:
-    sys.exit()
+# if len(sys.argv) != 2:
+#     sys.exit()
 
-                                                                    #limit of the songs 50
-response = requests.get("https://itunes.apple.com/search?entity=song&limit=50&term=" + sys.argv[1])
-#print(json.dumps(response.json(), indent=2)) # translate json to readable format
+#                                                                     #limit of the songs 50
+# response = requests.get("https://itunes.apple.com/search?entity=song&limit=50&term=" + sys.argv[1])
+# #print(json.dumps(response.json(), indent=2)) # translate json to readable format
 
-o = response.json()  ## storing all json response in to a variable
-for result in o["results"]:
-    print(result["trackName"])
+# o = response.json()  ## storing all json response in to a variable
+# for result in o["results"]:
+#     print(result["trackName"])
 
 
 
