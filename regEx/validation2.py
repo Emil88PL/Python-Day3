@@ -5,7 +5,7 @@ email = input("What is your email addres? ").strip()  #.lower()
             # r - raw string - pass exacly as is
             #[^] compliment you cannot match any of the items
 
-if re.search(r"^\w+@\w+\.(com|edu|uk|org)$", email, re.IGNORECASE): #finite state machine #lower()
+if re.search(r"^\w+@(\w+\.)?\w+\.(com|edu|uk|org)$", email, re.IGNORECASE): #finite state machine #lower()
     print("Valid")
 else:
     print("Invalid email address")
