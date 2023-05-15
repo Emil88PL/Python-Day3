@@ -10,14 +10,11 @@ class Student:   # put in other file
     def get(cls):
         name = input("Name: ")
         house = input("House: ")
-        return cls(name, house) # instantiate student object   
+        return cls(name, house) # instantiate student object  
 
 
-
-def main():
-    student = Student.get()
-    print(student)
-   
-
-if __name__ =="__main__":
-    main()
+## file student11.py calling Student class
+# 
+# 
+# 
+# @staticmethod
