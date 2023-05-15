@@ -13,6 +13,7 @@ def meow(n: int) -> str:  # document functions, 3rd party convention
         meow
     
         """
+        # python [file name] -v to tun inside tests
         return "meow\n" * n
 
 
